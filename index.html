@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso vídeo ❤️</title>
+  <meta name="description" content="A nossa história, contada do nosso jeito.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="play">▶</span>
+      <span>OurTube</span>
+    </div>
+    <div class="top-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Alternar tema">☾</button>
+      <button class="love-btn" id="surpriseBtn">❤️ surpresa</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="video-card">
+        <div class="video-frame" id="videoFrame">
+          <video id="coupleVideo" controls playsinline poster="assets/capa.jpg">
+            <source src="assets/nosso-video.mp4" type="video/mp4">
+            Seu navegador não conseguiu carregar o vídeo.
+          </video>
+          <div class="video-placeholder" id="videoPlaceholder">
+            <div class="big-play" id="playFake">▶</div>
+            <p>Coloque <strong>nosso-video.mp4</strong> dentro de <code>assets</code></p>
+            <small>Você também pode trocar a imagem <strong>capa.jpg</strong>.</small>
+          </div>
+        </div>
+
+        <div class="video-info">
+          <h1>A história de nós dois ❤️</h1>
+          <div class="video-meta">
+            <span>∞ visualizações</span>
+            <span>•</span>
+            <span id="publishDate">publicado no nosso dia</span>
+          </div>
+
+          <div class="video-actions">
+            <button id="likeBtn">♡ <span id="likeCount">∞</span></button>
+            <button id="shareBtn">↗ compartilhar</button>
+            <button id="memoryBtn">💌 uma mensagem</button>
+          </div>
+
+          <div class="description">
+            <strong>Nosso vídeo.</strong>
+            <p>
+              Dois caminhos que se encontraram e decidiram continuar andando juntos.
+              Este cantinho é uma pequena coleção de momentos, risadas, fotos e tudo aquilo
+              que faz a nossa história ser só nossa.
+            </p>
+            <span class="tag">#nósdois</span>
+            <span class="tag">#amor</span>
+            <span class="tag">#parasempre</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="channel-card">
+        <div class="avatar">N❤N</div>
+        <div>
+          <h2>Nós dois</h2>
+          <p>@nossahistoria</p>
+        </div>
+        <div class="subscribed">♡ juntos</div>
+      </aside>
+    </section>
+
+    <section class="comments-section">
+      <div class="section-heading">
+        <h2>Comentários</h2>
+        <span>os comentários que o nosso amor merece</span>
+      </div>
+
+      <div class="comment-live" id="liveComment">
+        <span class="live-dot"></span>
+        comentários aparecendo...
+      </div>
+
+      <div class="comments" id="comments">
+        <article class="comment">
+          <div class="comment-avatar">🥹</div>
+          <div>
+            <div class="comment-top"><strong>alguém que torce por nós</strong><span>há 2 anos</span></div>
+            <p>Eu assistiria essa história mil vezes. ❤️</p>
+            <div class="comment-actions">♡ 2,4 mil &nbsp; · &nbsp; responder</div>
+          </div>
+        </article>
+
+        <article class="comment">
+          <div class="comment-avatar">💌</div>
+          <div>
+            <div class="comment-top"><strong>o destino</strong><span>há muito tempo</span></div>
+            <p>Comentário fixado: ainda bem que vocês se encontraram.</p>
+            <div class="comment-actions">♡ ∞ &nbsp; · &nbsp; responder</div>
+          </div>
+        </article>
+
+        <article class="comment">
+          <div class="comment-avatar">😂</div>
+          <div>
+            <div class="comment-top"><strong>testemunha oficial</strong><span>há 1 ano</span></div>
+            <p>Eu só vim pelos bastidores e fiquei pela história de amor.</p>
+            <div class="comment-actions">♡ 892 &nbsp; · &nbsp; responder</div>
+          </div>
+        </article>
+      </div>
+
+      <button class="more-btn" id="moreComments">carregar mais comentários</button>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="eyebrow">A NOSSA HISTÓRIA</div>
+      <h2>Do primeiro capítulo<br>ao nosso para sempre.</h2>
+      <p class="lead">Cada momento ganhou um lugar aqui.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot">01</div>
+          <div class="timeline-content">
+            <span class="date">O começo</span>
+            <h3>Quando nossos caminhos se cruzaram</h3>
+            <p>Escreva aqui como vocês se conheceram. Pode ser fofo, engraçado ou completamente caótico.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">02</div>
+          <div class="timeline-content">
+            <span class="date">A primeira memória</span>
+            <h3>Aquele momento que ficou</h3>
+            <p>Conte sobre o primeiro encontro, primeira conversa importante ou aquela lembrança que vocês nunca esqueceram.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">03</div>
+          <div class="timeline-content">
+            <span class="date">Nós</span>
+            <h3>Quando deixou de ser coincidência</h3>
+            <p>O momento em que vocês perceberam que aquilo era diferente.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">04</div>
+          <div class="timeline-content">
+            <span class="date">O noivado 💍</span>
+            <h3>Um sim para a vida</h3>
+            <p>Coloque aqui a história do pedido, a data e todos os detalhes que tornam esse momento especial.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item final">
+          <div class="timeline-dot">∞</div>
+          <div class="timeline-content">
+            <span class="date">Continua...</span>
+            <h3>O melhor ainda está sendo escrito.</h3>
+            <p>Porque a nossa história não termina neste site. Ela só ganhou uma página nova.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="phone-section">
+      <div class="phone-copy">
+        <div class="eyebrow">MEMÓRIAS</div>
+        <h2>Um pedacinho do nosso celular.</h2>
+        <p>Toque nos aplicativos. Existem pequenas coisas escondidas por aqui. 👀</p>
+      </div>
+
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="status"><span>09:37</span><span>♡ ▪︎</span></div>
+          <div class="phone-title">nós dois</div>
+          <div class="apps">
+            <button class="app app-pink" data-modal="photos">📸<small>Fotos</small></button>
+            <button class="app app-blue" data-modal="chat">💬<small>Conversas</small></button>
+            <button class="app app-green" data-modal="music">🎵<small>Nossa música</small></button>
+            <button class="app app-purple" data-modal="map">📍<small>Lugares</small></button>
+            <button class="app app-yellow" data-modal="secret">🔒<small>Segredo</small></button>
+            <button class="app app-red" data-modal="letter">💌<small>Carta</small></button>
+          </div>
+          <div class="phone-widget">
+            <span>❤️</span>
+            <div><strong id="daysTogether">0 dias</strong><small>de uma história que ainda continua</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-heading">
+        <h2>Alguns dos nossos momentos</h2>
+        <span>troque estas imagens pelas fotos de vocês</span>
+      </div>
+      <div class="gallery">
+        <div class="photo-placeholder tall">FOTO 01</div>
+        <div class="photo-placeholder">FOTO 02</div>
+        <div class="photo-placeholder">FOTO 03</div>
+        <div class="photo-placeholder wide">FOTO 04</div>
+        <div class="photo-placeholder">FOTO 05</div>
+      </div>
+    </section>
+
+    <section class="counter-section">
+      <div class="eyebrow">DESDE</div>
+      <h2 id="counterDate">01.01.2024</h2>
+      <p>e contando...</p>
+      <div class="counter">
+        <div><strong id="years">0</strong><span>anos</span></div>
+        <div><strong id="months">0</strong><span>meses</span></div>
+        <div><strong id="days">0</strong><span>dias</span></div>
+        <div><strong id="hours">0</strong><span>horas</span></div>
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <div class="letter">
+        <span class="stamp">❤</span>
+        <div class="eyebrow">PARA VOCÊ</div>
+        <h2>Se você chegou até aqui...</h2>
+        <p>
+          então provavelmente já percebeu que este site nunca foi sobre um vídeo,
+          uma timeline ou algumas fotos.
+        </p>
+        <p>
+          É sobre nós. Sobre todas as pequenas coisas que, juntas, viraram uma história
+          grande demais para caber em qualquer tela.
+        </p>
+        <p class="signature">Com amor,<br><strong>eu ❤️</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    feito com amor, risadas e um pouquinho de código. ♡
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
